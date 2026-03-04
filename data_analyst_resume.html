@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> 
+<head>
+    <title>Bowen Fu - Resume</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bowen Fu - Data Analyst Engineer Resume">
+    <meta name="author" content="Bowen Fu">    
+    <link rel="shortcut icon" href="/resume/favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="resume/assets/css/googlecss.css" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+	<script defer src="resume/assets/fontawesome/js/all.min.js"></script>
+    <!-- QRCode JS -->
+    <script src="resume/assets/js/qrcode.min.js"></script>
+       
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="resume/assets/css/pillar-1.css">
+    
+    <style>
+        /* Enhance spacing and typography */
+        .resume-section-title {
+            color: #2d3748;
+            border-bottom: 2px solid #e2e8f0;
+            display: inline-block;
+            padding-right: 1rem;
+        }
+        
+        .resume-timeline-item-header .resume-position-title {
+            color: #2b6cb0; /* Professional Blue */
+        }
+
+        .badge-pill {
+            background-color: #2b6cb0; /* Darker blue background */
+            color: #ffffff; /* White text for better contrast */
+            border: none;
+            padding: 0.35em 0.65em;
+            font-weight: 500;
+        }
+
+        /* Summary List Styling - Simplified bullets */
+        .summary-list li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .summary-list li::before {
+            content: "•"; /* Simple bullet point */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #2d3748;
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        
+        /* Highlight Strong Text */
+        strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        /* Improve Timeline Spacing */
+        .resume-timeline-item-desc ul {
+            padding-left: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .resume-timeline-item-desc li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* Sidebar Spacing */
+        .resume-skill-item h4 {
+            margin-bottom: 0.8rem;
+            color: #4a5568;
+        }
+        
+        .resume-skill-item li {
+            margin-bottom: 0.4rem !important;
+        }
+        
+        /* Profile Picture Adjustment */
+        .resume-header .picture {
+            width: 160px; /* Adjust size */
+            height: auto; /* Maintain original aspect ratio */
+            border-radius: 8px; /* Standard rounded corners */
+            border: none; /* Remove border */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            display: block;
+            margin: 0 auto 1.5rem auto; /* Added bottom margin */
+        }
+
+        /* Footer */
+        .footer small {
+            color: #718096;
+        }
+
+        /* Language Toggle - Refined */
+        .lang-toggle {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 1000;
+        }
+        
+        .lang-switch {
+            display: inline-flex;
+            background-color: #f1f5f9;
+            border-radius: 20px;
+            padding: 2px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .lang-switch a {
+            text-decoration: none;
+            padding: 4px 12px;
+            border-radius: 18px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #64748b;
+            transition: all 0.2s ease;
+        }
+        
+        .lang-switch a.active {
+            background-color: #2b6cb0;
+            color: white;
+            box-shadow: 0 2px 4px rgba(43, 108, 176, 0.2);
+        }
+        
+        .lang-switch a:hover:not(.active) {
+            color: #2b6cb0;
+            background-color: rgba(43, 108, 176, 0.05);
+        }
+    </style>
+
+</head> 
+
+<body>	
+
+    <article class="resume-wrapper text-center position-relative">
+        <div class="lang-toggle">
+            <div class="lang-switch">
+                <a href="data_analyst_resume.html" class="active">中</a>
+                <a href="data_analyst_resume_en.html">EN</a>
+            </div>
+        </div>
+	    <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
+		    <header class="resume-header pt-4 pt-md-0">
+			    <div class="row">
+				    <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+				        <img class="picture" src="resume/assets/images/profile.png" alt="">
+				    </div><!--//col-->
+				    <div class="col">
+					    <div class="row p-4 justify-content-center justify-content-md-between">
+						    <div class="primary-info col-auto">
+							    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">付博闻/Bowen Fu</h1>
+							    <div class="title mb-3">目标岗位：数据分析工程师</div>
+							    <ul class="list-unstyled">
+								    <li class="mb-2"><a class="text-link" href="mailto:1171460872@qq.com"><i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i>1171460872@qq.com</a></li>
+								    <li><a class="text-link" href="tel:19892951690"><i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>19892951690</a></li>
+							    </ul>
+						    </div><!--//primary-info-->
+						    <div class="secondary-info col-auto mt-2">
+							    <ul class="resume-social list-unstyled">
+					                <li class="mb-3"><span class="fa-container text-center me-2"><i class="fas fa-map-marker-alt fa-fw"></i></span>深圳 / 东莞</li>
+							    </ul>
+                                <div class="mt-3 text-end">
+                                    <div id="qrcode" style="width: 80px; height: 80px; border-radius: 4px; background: white; padding: 4px; display: inline-block;"></div>
+                                </div>
+                                <script>
+                                    new QRCode(document.getElementById("qrcode"), {
+                                        text: window.location.href,
+                                        width: 72,
+                                        height: 72,
+                                        colorDark : "#000000",
+                                        colorLight : "#ffffff",
+                                        correctLevel : QRCode.CorrectLevel.H
+                                    });
+                                </script>
+						    </div><!--//secondary-info-->
+					    </div><!--//row-->
+					    
+				    </div><!--//col-->
+			    </div><!--//row-->
+		    </header>
+		    <div class="resume-body p-5">
+			    <section class="resume-section education-section mb-5">
+				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">教育背景</h2>
+				    <div class="resume-section-content">
+                        
+                        <!-- Master's Degree -->
+                        <div class="mb-4">
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-2">
+                                <h3 class="resume-position-title font-weight-bold mb-1">北京联合大学</h3>
+                                <div class="resume-position-time">2024 – 2027</div>
+                            </div>
+                            <div class="mb-2"><strong>硕士 · 软件工程</strong></div>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1"><strong>成绩：</strong>硕士研究生考试 笔试 + 复试综合排名第一，专业课绩点 3.5 / 4.0</li>
+                                <li class="mb-1"><strong>研究方向：</strong>数据分析与机器学习，AI Agent 系统与自动化应用</li>
+                                <li><strong>核心课程：</strong>机器学习数学基础、深度学习、大数据开发、大模型导论、数据挖掘与分析</li>
+                            </ul>
+                        </div>
+
+                        <!-- Bachelor's Degree -->
+                        <div>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-2">
+                                <h3 class="resume-position-title font-weight-bold mb-1">北京联合大学</h3>
+                                <div class="resume-position-time">2019 – 2023</div>
+                            </div>
+                            <div class="mb-2"><strong>本科 · 软件工程</strong></div>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1"><strong>成绩：</strong>平均绩点 3.6 / 4.0</li>
+                                <li><strong>主修课程：</strong>数据结构、操作系统、计算机网络、数据库原理、软件工程</li>
+                            </ul>
+                        </div>
+
+				    </div>
+			    </section><!--//education-section-->
+			    <div class="row">
+				    <div class="col-lg-9">
+					    <section class="resume-section experience-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">实习 / 项目经历</h2>
+						    <div class="resume-section-content">
+							    <div class="resume-timeline position-relative">
+								    
+                                    <!-- Crop Yield Analysis (Moved to Top) -->
+								    <article class="resume-timeline-item position-relative pb-5">
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">数据分析 / 机器学习建模</h3>
+										        <div class="resume-company-name ms-auto">农作物产量与价格关系分析（高校合作项目）</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">2024.11 – 2025.03</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <p><strong>项目内容：</strong></p>
+                                            <ul>
+                                                <li>通过爬虫采集多源公开数据并完成清洗与对齐，构建数据分析 pipeline。</li>
+                                                <li>构建时间序列特征（滞后变量、时间窗口统计等），使用 <strong>XGBoost</strong> 与 <strong>LSTM</strong> 模型进行预测与相关性分析。</li>
+                                                <li>使用 <strong>matplotlib</strong> 生成可视化报告（趋势图、相关性分析图等），提升分析结论表达能力。</li>
+                                            </ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">技术栈：</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Pandas</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Numpy</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">XGBoost</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">PyTorch</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">matplotlib</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+								    </article><!--//resume-timeline-item-->
+
+                                    <!-- Beijing Unicom -->
+                                    <article class="resume-timeline-item position-relative pb-5">
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">数据治理开发工程师</h3>
+										        <div class="resume-company-name ms-auto">北京联通｜北京市感知管理服务平台</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">2025.06 – 2025.12</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <p><strong>项目背景：</strong>平台需要对 MySQL、Kafka、文件上传等多数据源数据进行统一治理并存入 TDengine ，为数据分析与业务查询提供支撑。</p>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">核心贡献：</h4>
+										    <ul>
+											    <li><strong>Kafka 消息分区优化：</strong>按数据模型对 Kafka 消息进行分区与路由设计，提升消费并行度并缓解热点分区问题，在高峰场景下数据链路吞吐能力提升 <strong>约 2–6 倍</strong> 。</li>
+											    <li><strong>TDengine 批量写入优化：</strong>根据业务实时性需求较低的特点，将写入方式由逐条写入优化为批处理写入，并调优批大小与 flush 策略，使数据库写入吞吐提升 <strong>约 3–5 倍</strong> 。</li>
+											    <li><strong>Canal 增量同步优化：</strong>引入 Canal 监听 MySQL binlog 并直连 Kafka，将数据同步方式由轮询拉取改为增量变更驱动，减少 MySQL 查询压力，读负载降低 <strong>约 30–50%</strong> 。</li>
+											    <li><strong>数据治理与查询优化：</strong>使用 Python 完成数据清洗与质量校验（缺失值、异常值、重复数据等），并通过 SQL 与索引优化提升数据查询效率。</li>
+										    </ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">技术栈：</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">SpringBoot</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Kafka</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">TDengine</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Canal</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">SQL</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+								    </article><!--//resume-timeline-item-->
+								    
+                                    <!-- Independent Station -->
+								    <article class="resume-timeline-item position-relative pb-5">
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Agent 自动化开发原型</h3>
+										        <div class="resume-company-name ms-auto">外贸企业独立站项目（个人）</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">2026.01 – 至今</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+										    <p><strong>项目说明：</strong>为精密加工企业开发境外独立站（企业主页与宣传型网站），探索 <strong>Agent 主导的开发与运维自动化模式</strong> 。</p>
+                                            <ul>
+                                                <li><strong>构建 Cloud Code Skills 工作流</strong>，实现任务拆解、工具调用、错误重试与日志记录。</li>
+                                                <li><strong>开发图像生成类 MCP 服务</strong> ，封装工具协议并实现参数与结果标准化，使 Agent 可自动调用生成服务。</li>
+                                                <li><strong>构建 step-level 执行日志系统</strong>，记录 tool name / input / output / status，用于评估 Agent 成功率与执行效率。</li>
+                                            </ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">技术栈：</h4>
+										    <ul class="list-inline">
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Agent</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">RAG</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">MCP</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Docker</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+								    </article><!--//resume-timeline-item-->
+								    
+							    </div><!--//resume-timeline-->
+						    </div>
+					    </section><!--//experience-section-->
+
+                        <!-- Self Evaluation (Moved Here) -->
+                        <section class="resume-section interests-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">自我评价</h2>
+						    <div class="resume-section-content">
+							    <p class="mb-0">关注 AI 技术与数据分析在真实业务中的结合，能够从 <strong>数据接入、数据治理到分析与可视化</strong> 构建完整的数据解决方案。具备良好的工程能力与学习能力，能够快速理解业务需求并通过数据分析支持业务决策。在外贸与海外业务场景中，能够通过数据分析与自动化工具提升业务效率与数据价值。</p>
+						    </div>
+					    </section><!--//interests-section-->
+
+				    </div>
+				    <div class="col-lg-3">
+					    <section class="resume-section skills-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">技能</h2>
+						    <div class="resume-section-content">
+						        
+                                <div class="resume-skill-item">
+							        <h4 class="resume-skills-cat font-weight-bold">数据分析</h4>
+							        <ul class="list-unstyled mb-4">
+								        <li class="mb-2">Python: Pandas / Numpy</li>
+								        <li class="mb-2">数据清洗与特征工程</li>
+								        <li class="mb-2">matplotlib 数据可视化</li>
+								        <li class="mb-2">SQL 数据查询与索引优化</li>
+							        </ul>
+						        </div><!--//resume-skill-item-->
+						        
+						        <div class="resume-skill-item">
+						            <h4 class="resume-skills-cat font-weight-bold">AI 工程能力</h4>
+							        <ul class="list-unstyled mb-4">
+								        <li class="mb-2">模型微调</li>
+								        <li class="mb-2">Agent 搭建</li>
+								        <li class="mb-2">MCP Server</li>
+								        <li class="mb-2">RAG 系统</li>
+							        </ul>
+						        </div><!--//resume-skill-item-->
+						        
+						        <div class="resume-skill-item">
+						            <h4 class="resume-skills-cat font-weight-bold">机器学习</h4>
+						            <ul class="list-unstyled mb-4">
+							            <li class="mb-2">XGBoost</li>
+							            <li class="mb-2">LSTM (PyTorch)</li>
+						            </ul>
+						        </div><!--//resume-skill-item-->
+
+                                <div class="resume-skill-item">
+						            <h4 class="resume-skills-cat font-weight-bold">开发与工具</h4>
+						            <ul class="list-unstyled mb-4">
+							            <li class="mb-2">Java: SpringBoot / SpringMVC</li>
+							            <li class="mb-2">Git</li>
+							            <li class="mb-2">Docker</li>
+						            </ul>
+						        </div><!--//resume-skill-item-->
+
+						    </div><!--resume-section-content-->
+					    </section><!--//skills-section-->
+					    
+                        <!-- Education Removed from here -->
+					    
+                        <section class="resume-section reference-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">竞赛与荣誉</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled resume-awards-list">
+								    <li class="mb-2 ps-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">北京市数学建模高校比赛 二等奖</div>
+								    </li>
+								    <li class="mb-2 ps-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">蓝桥杯 Java 竞赛 二等奖</div>
+								    </li>
+                                    <li class="mb-2 ps-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">第九届北京市大学生工程训练综合能力竞赛（智能无人机配送） 一等奖</div>
+								    </li>
+							    </ul>
+						    </div>
+					    </section><!--//awards-section-->
+					    
+                        <section class="resume-section language-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">语言能力</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled resume-lang-list">
+								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">英语</span> <small class="text-muted font-weight-normal">(CET-4)</small></li>
+                                    <li><small class="text-muted">具备英文技术文档阅读能力，可阅读海外技术资料与开发文档。</small></li>
+							    </ul>
+						    </div>
+					    </section><!--//language-section-->
+					    
+                        <!-- Self Evaluation Removed from here -->
+					    
+				    </div>
+			    </div><!--//row-->
+		    </div><!--//resume-body-->
+		    
+		    
+	    </div>
+    </article> 
+
+    
+    <footer class="footer text-center pt-2 pb-5">
+	    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+    </footer>
+
+    
+
+</body>
+</html>
