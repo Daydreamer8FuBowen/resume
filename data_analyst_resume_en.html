@@ -295,25 +295,26 @@
 								    <article class="resume-timeline-item position-relative pb-5">
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">Agent Automation Prototype</h3>
-										        <div class="resume-company-name ms-auto">Foreign Trade Independent Site (Personal Project)</div>
+										        <h3 class="resume-position-title font-weight-bold mb-1">RAG系统开发实习</h3>
+										        <div class="resume-company-name ms-auto">北京联通｜北京市感知管理服务平台</div>
 										    </div><!--//row-->
 										    <div class="resume-position-time">2026.01 – Present</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p><strong>Description:</strong> Developed an overseas independent site (corporate homepage & showcase) for a precision machining company, exploring <strong>Agent-led development and automated operations</strong>.</p>
                                             <ul>
-                                                <li><strong>Cloud Code Skills Workflow:</strong> Implemented task decomposition, tool invocation, error retry, and logging.</li>
-                                                <li><strong>Image Generation MCP Service:</strong> Encapsulated tool protocols and standardized parameters/results, enabling the Agent to automatically call generation services.</li>
-                                                <li><strong>Step-level Execution Logs:</strong> Recorded tool name/input/output/status to evaluate Agent success rate and execution efficiency.</li>
+                                                <li>参与建设基于 Spring MVC + SSE 流式响应 + 异步任务队列 的 RAG 智能问答系统，实现检索与生成解耦，提高系统并发处理能力与稳定性。</li>
+                                                <li>负责 知识数据清洗与语义分片（Chunking）流程设计，构建多源文档（PDF/Word/运维手册）解析与结构化处理 pipeline，完成 5000k+ 文档 chunk 的 embedding 生成与 Milvus 向量数据库入库。</li>
+                                                <li>设计并实现 RAG 权限鉴权机制，基于用户角色与文档安全标签在检索阶段进行 metadata filter（Security Trimming），避免未授权文档进入 LLM 上下文，并支持“强相关但无权限访问”的提示机制。</li>
+                                                <li>参与 RAG 性能优化：设计高频 Rerank 结果缓存策略，基于问题向量相似度、语义关键词匹配及检索文档集合相似度判断缓存命中，使用 Redis 缓存 Top50 检索结果，减少 Rerank 模型调用并降低系统响应延迟。</li>
                                             </ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Tech Stack:</h4>
 										    <ul class="list-inline">
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Agent</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">RAG</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">MCP</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Docker</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Milvus</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Redis</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">SSE</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Embedding</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Vector Search</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Rerank</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 								    </article><!--//resume-timeline-item-->
