@@ -252,9 +252,9 @@
 					                <li class="mb-3"><span class="fa-container text-center me-2"><i class="fas fa-map-marker-alt fa-fw"></i></span>北京</li>
 							    </ul>
                                 <div class="mt-3 text-end">
-                                    <div id="qrcode" style="width: 80px; height: 80px; border-radius: 4px; background: white; padding: 4px; display: inline-block;"></div>
+                                    <!-- <div id="qrcode" style="width: 80px; height: 80px; border-radius: 4px; background: white; padding: 4px; display: inline-block;"></div> -->
                                 </div>
-                                <script>
+                                <!-- <script>
                                     new QRCode(document.getElementById("qrcode"), {
                                         text: window.location.href,
                                         width: 72,
@@ -263,7 +263,7 @@
                                         colorLight : "#ffffff",
                                         correctLevel : QRCode.CorrectLevel.H
                                     });
-                                </script>
+                                </script> -->
 						    </div><!--//secondary-info-->
 					    </div><!--//row-->
 					    
@@ -284,8 +284,8 @@
                             <div class="mb-2"><strong>硕士 · 软件工程</strong></div>
                             <ul class="list-unstyled mb-0">
                                 <li class="mb-1"><strong>成绩：</strong>硕士研究生考试 笔试 + 复试综合排名第一，专业课绩点 3.5 / 4.0</li>
-                                <li class="mb-1"><strong>研究方向：</strong>数据分析与机器学习，AI Agent 系统与自动化应用</li>
-                                <li><strong>核心课程：</strong>机器学习数学基础、深度学习、大数据开发、大模型导论、数据挖掘与分析</li>
+                                <li class="mb-1"><strong>研究方向：</strong>AI Agent 系统 + 多模态大模型</li>
+                                <li><strong>核心课程：</strong>机器学习数学基础、深度学习、大数据开发、大模型导论</li>
                             </ul>
                         </div>
 
@@ -368,30 +368,29 @@
 									    </div><!--//resume-timeline-item-desc-->
 								    </article><!--//resume-timeline-item-->
 
-                                    <!-- Beijing Unicom (Reframed as Data Infra) -->
+                                    <!-- Time Series Data Management -->
                                     <article class="resume-timeline-item position-relative pb-5">
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">大数据基础设施与实时计算</h3>
+										        <h3 class="resume-position-title font-weight-bold mb-1">时序数据管理系统</h3>
 										        <div class="resume-company-name ms-auto">北京联通｜北京市感知管理服务平台</div>
 										    </div><!--//row-->
 										    <div class="resume-position-time">2025.07 – 2025.10</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p><strong>项目描述：</strong>构建高吞吐实时数据处理管道，对海量业务数据进行统一治理与存储，支撑上层智能应用。</p>
+										    <p><strong>项目描述：</strong>构建一套可配置、可管理、可通知的数据预警系统，实现多源异构数据的统一采集并导入 TDengine 时序数据库。</p>
 										    <ul>
-											    <li><strong>高并发数据管道：</strong>基于 <strong>Kafka</strong> 优化消息分区与路由策略，解决热点问题，提升数据链路吞吐能力 <strong>2–6 倍</strong>。</li>
-											    <li><strong>时序数据库优化：</strong>针对大规模传感器数据场景，优化 <strong>TDengine</strong> 批处理写入策略，写入性能提升 <strong>3–5 倍</strong>。</li>
-											    <li><strong>实时数据同步：</strong>引入 Canal 实现 MySQL 到 Kafka 的增量数据同步 (CDC)，降低数据库负载 <strong>30–50%</strong>，确保数据实时性。</li>
-											    <li><strong>数据治理：</strong>使用 Python 构建自动化数据清洗脚本，处理缺失值与异常数据，提升数据质量。</li>
+											    <li><strong>架构重构：</strong>参与将原有单体架构重构为高并发分布式架构，引入 <strong>Kafka</strong> 消息队列解耦数据采集与处理模块，大幅提升系统吞吐量。</li>
+											    <li><strong>Kafka 并发实现：</strong>负责核心数据链路的 Kafka 代码重构与实现，设计高效的消费者模型，确保海量时序数据的实时处理与写入。</li>
+											    <li><strong>数据预警系统：</strong>参与构建可配置的数据预警规则引擎，支持灵活的阈值设置与多渠道报警通知，保障系统稳定运行。</li>
+											    <li><strong>时序数据存储：</strong>负责多源数据到 <strong>TDengine</strong> 的统一导入链路，优化写入性能，支撑大规模时序数据的存储需求。</li>
 										    </ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">技术栈：</h4>
 										    <ul class="list-inline">
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Kafka</span></li>
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">TDengine</span></li>
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">SpringBoot</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Canal</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Java</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 								    </article><!--//resume-timeline-item-->
@@ -407,7 +406,6 @@
 							    <p class="mb-0">
                                     热衷于 <strong>AGI 技术探索</strong>，具备扎实的 <strong>AI 工程化能力</strong> 与 <strong>全栈开发背景</strong>。
                                     熟悉 <strong>LLM Agent</strong> 开发范式，拥有 <strong>RAG</strong> 与 <strong>MCP</strong> 实战经验，能够将大模型能力落地到实际业务场景。
-                                    具备 <strong>深度学习</strong> 建模能力，熟练掌握 PyTorch 进行模型训练与调优。
                                     拥有 <strong>大数据处理</strong> 经验，能够构建从数据采集、清洗到模型部署的完整闭环，致力于成为一名优秀的 AI 开发工程师。
                                 </p>
 						    </div>
@@ -425,14 +423,14 @@
 								        <li class="mb-2">LLM 应用开发 / RAG</li>
 								        <li class="mb-2">Agent 智能体 / MCP</li>
 								        <li class="mb-2">Prompt Engineering</li>
-								        <li class="mb-2">LangChain / LlamaIndex</li>
+								        <li class="mb-2">LangChain </li>
 							        </ul>
 						        </div><!--//resume-skill-item-->
 						        
 						        <div class="resume-skill-item">
 						            <h4 class="resume-skills-cat font-weight-bold">深度学习</h4>
 						            <ul class="list-unstyled mb-4">
-							            <li class="mb-2">PyTorch / TensorFlow</li>
+							            <li class="mb-2">PyTorch </li>
 							            <li class="mb-2">LSTM / CNN / Transformer</li>
 							            <li class="mb-2">模型微调 (Fine-tuning)</li>
                                         <li class="mb-2">XGBoost / Scikit-learn</li>
